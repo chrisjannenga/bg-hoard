@@ -8,6 +8,11 @@
     "test": "nx test"
   },
   "private": true,
+  "nx": {
+    "implicitDependencies": {
+      ".github/workflows/ci.yml": "*"
+    }
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "~14.2.0",
     "@angular-eslint/eslint-plugin": "~14.0.4",
